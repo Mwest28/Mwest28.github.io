@@ -42,9 +42,11 @@ circles.push(circle);
 
 
         // TODO 7 : Use a loop to create multiple circles
+       drawCircle 
 
-
-
+      for (var i = 0; i > 100; i++) {
+        drawCirlce();
+    }
 
         ///////////////////
         // PROGRAM LOGIC //
@@ -70,7 +72,15 @@ circles.push(circle);
             game.checkCirclePosition(circles[3]);
             game.checkCirclePosition(circles[4]);
             // TODO 8 / TODO 9 : Iterate over the array
-           
+          
+for (var i = 0; i < circles.length; i++) {
+    physikz.updatePosition(circles[i]);
+}
+
+for (var i = 0; i < circles.length; i++) {
+    physikz.loopFromSides(circles[i], canvas);
+}
+
             
         }
     
